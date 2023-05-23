@@ -1,0 +1,29 @@
+{
+  "name": "hellscode-collections",
+  "version": "0.0.1",
+  "description": "Collections libary for JavaScript/TypeScript",
+  "main": "lib/index.js",
+  "scripts": {
+    "cleanPackage": "node devScripts/cleanDir.js ./lib",
+    "cleanTest": "node devScripts/cleanDir.js ./test/lib",
+    "buildPackage": "npx tsc --project tsconfig.package.json",
+    "buildTest": "npx tsc --project tsconfig.test.json",
+    "test": "npx mocha test/lib/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chellkamp/hellscode-collections.git"
+  },
+  "author": "Christopher Hellkamp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chellkamp/hellscode-collections/issues"
+  },
+  "homepage": "https://github.com/chellkamp/hellscode-collections#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.1.7",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4"
+  }
+}
